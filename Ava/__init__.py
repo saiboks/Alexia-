@@ -6,23 +6,22 @@ import sys
 import time
 from functools import wraps
 from inspect import getfullargspec
-from os import environ, mkdir, path
+from os import environ
 from sys import exit as sysexit
 from traceback import format_exc
 
 import spamwatch
 import telegram.ext as tg
-from Abg import patch
+from Python_ARQ import ARQ
+from Abg import patch  # types : ignore
 from aiohttp import ClientSession
 from pyrogram import Client
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, PeerIdInvalid
 from pyrogram.types import Message
-from Python_ARQ import ARQ
-from redis import StrictRedis
 from telegram import Chat
 from telegraph import Telegraph
 from telethon import TelegramClient
-from telethon.sessions import MemorySession, StringSession
+from telethon.sessions import MemorySession
 
 StartTime = time.time()
 

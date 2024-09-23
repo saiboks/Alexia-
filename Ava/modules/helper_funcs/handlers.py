@@ -9,7 +9,7 @@ from telegram import Update
 from telegram.ext import CommandHandler, Filters, MessageHandler, RegexHandler
 
 import Ava.modules.sql.blacklistusers_sql as sql
-from Ava import ALLOW_EXCL, DEMONS, DEV_USERS, DRAGONS, TIGERS, WOLVES
+from Ava import DEMONS, DEV_USERS, DRAGONS, TIGERS, WOLVES
 
 CMD_STARTERS = ("/", "!", "-", "?")
 
